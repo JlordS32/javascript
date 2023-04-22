@@ -25,7 +25,7 @@ const filteredNames = firstNames.filter((name) => {
 
 const filteredNames_2 = firstNames.filter((name) => name.includes('lie'));
 
-console.log(filteredNames);
+// console.log(filteredNames);
 
 const numbers = [1, 2, 3, 4, 5, 6];
 
@@ -59,3 +59,21 @@ const filter_myver = ((array) => {
 // console.log(filter_myver(numbers)); // Output: [2, 4, 6]
 
 //console.log(filteredNames_2);
+
+// 4. Reduce Function
+
+const sum = numbers.reduce((acc, cur) =>  acc + cur);
+// console.log(sum);
+
+// 5. Find Function
+
+const firstEvenNum = numbers.find((n ) => n % 2 === 0);
+const firstOddNum = numbers.find((n) => n % 1 === 0);
+// console.log(firstEvenNum);
+
+// 6. Find Index Function
+
+const findingCharlie = firstNames.findIndex((name, i) => {
+    return name === 'Charlie';
+});
+console.log(findingCharlie);
